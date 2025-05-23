@@ -696,32 +696,6 @@ Vector: 10 20 30 40
 - `vector` resizes dynamically with methods like `push_back`.
 
 ## 18. Advanced Topics
-### Templates
-Templates enable generic programming, allowing functions or classes to work with any data type.
-
-**Example**:
-```cpp
-#include <iostream>
-using namespace std;
-template <typename T>
-T max(T a, T b) {
-    return (a > b) ? a : b;
-}
-int main() {
-    cout << "Max int: " << max(5, 3) << endl;
-    cout << "Max double: " << max(5.5, 3.3) << endl;
-    return 0;
-}
-```
-**Output**:
-```
-Max int: 5
-Max double: 5.5
-```
-**How it Works**:
-- `template <typename T>` defines a generic type `T`.
-- The function works with any type supporting `>`.
-
 ### Exception Handling
 Handles runtime errors using `try`, `catch`, and `throw`.
 
